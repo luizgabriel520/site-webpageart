@@ -550,13 +550,17 @@
   }
   .work-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-top: 20px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 960px) {
+    .work-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 640px) {
     .work-grid { grid-template-columns: 1fr; }
   }
+
   .project-card {
     background: var(--bg-elevated);
     border: 1px solid var(--line);
@@ -1280,10 +1284,32 @@
           </div>
         </div>
       </article>
+
+      <article class="project-card">
+        <div class="project-thumb">
+          <img src="black-label.jpg" alt="Site premium Black Label Barber Club — barbearia masculina" width="800" height="560" loading="lazy">
+        </div>
+        <div class="project-body">
+          <div class="project-meta">
+            <span>Site institucional</span>
+            <span>Barbearia premium</span>
+          </div>
+          <h3>Black Label Barber Club</h3>
+          <p>
+            Site institucional dark premium para barbearia masculina: serviços, galeria,
+            equipe, depoimentos e CTA de agendamento. Visual sofisticado com tipografia forte.
+          </p>
+          <div class="project-links">
+            <a href="https://barber-shop-previa.bolt.host" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Ver projeto</a>
+            <a href="#orcamento" class="btn btn-ghost btn-sm">Quero algo assim</a>
+          </div>
+        </div>
+      </article>
     </div>
 
   </div>
 </section>
+
 
 
 <section class="services" id="servicos">
